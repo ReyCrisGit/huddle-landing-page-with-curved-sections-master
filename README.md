@@ -28,10 +28,10 @@ Los usuarios deberían poder:
 
 ![](./screenshot.jpg)
 
-### Links
+### Enlances
 
-- URL de la solución: [GitHub](https://your-solution-url.com)
-- URL del sitio en vivo: [GitHubPages](https://your-live-site-url.com)
+- URL de la solución: [GitHub](https://github.com/ReyCrisGit/huddle-landing-page-with-curved-sections-master.git)
+- URL del sitio en vivo: [GitHubPages](https://reycrisgit.github.io/huddle-landing-page-with-curved-sections-master/)
 
 ## Mi proceso
 
