@@ -3,10 +3,12 @@
     --lightpink: hsl(321, 100%, 78%);
     --light-red: hsl(0, 100%, 63%);
     --very-dark-cyan: hsl(192, 100%, 9%);
-    --very-pale-blue: hsl(207, 100%, 98%);
+    --very-pale-blue: hsl(210, 100%, 98%);
 
     --font-headings: "Poppins", sans-serif;
     --font-body: "Open Sans", sans-serif;
+
+    --gap: 100px;
 }
 
 * {
@@ -18,18 +20,14 @@ body {
     background-color: var(--very-pale-blue);
     font-family: var(--font-body);
 }
-.body {
-    
-}
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 90%;
     max-width: 480;
-    border: 1px solid;
     margin: 30px auto;
-    gap: 100px;
+    gap: var(--gap);
 }
 .nav-container {
     display: flex;
@@ -65,15 +63,18 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    gap: 30px;
+    gap: 15px;
     width: 88%;
+    text-align: center;
 }
 .main-title {
     font-family: var(--font-headings);
     font-size: 1.5em;
+    color: var(--very-dark-cyan);
 }
 .main-paragraph {
     font-size: .8em;
+    color: var(--very-dark-cyan);
 }
 .button {
     display: inline-block;
@@ -102,9 +103,6 @@ body {
     width: 50%;
     margin: 0 auto;
     color: var(--very-dark-cyan);
-}
-.numbers-content {
-    
 }
 .numbers-logo-container {
     width: 25px;
@@ -136,19 +134,267 @@ body {
 }
 .content {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 70px;
 }
 .content-image-container {
-    width: 70%;
+    width: 80%;
     max-width: 400px;
 }
 .image-content {
     width: 100%;
-
 }
 .texts-content {
-    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+}
+.content-title {
+    font-family: var(--font-headings);
+    font-weight: 700;
+    font-size: 1.3em;
+}
+.content-paragraph {
+    font-weight: 600;
+    font-size: .8em;
+}
+.ready-build {
+    margin-top: 10em;
+    background-size: cover;
+    position: relative;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--very-dark-cyan);
+    color: var(--very-pale-blue);
+    gap: 70px;
+    margin-top: -1px;
+}
+.footer-content {
+    width: 90%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 70px;
+    margin-top: 20px;
+}
+.img-footer-container {
+    max-width: 100%;
+    margin-top: 15em;
+}
+.img-footer {
+    width: 100%;
+    display: block;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-title {
+    text-transform: uppercase;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+}
+.input {
+    padding: .8em;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+}
+.subscribe {
+    width: 50%;
+    background-color: var(--pink);
+    color: var(--very-pale-blue);
+    font-weight: 600;
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.container-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.logo-white {
+    width: 12em;
+    display: block;
+}
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-aux-container {
+    display: flex;
+    gap: 20px;
+}
+.phone {
+    font-size: .9em;
+}
+.rrss-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 100px;
+    align-items: center;
+}
+.rrss {
+    width: 1.5em;
+}
+.rrss-ico {
+    width: 80%;
+    border-radius: 3px;
+    display: block;
+}
+.x {
+    background-color: var(--very-pale-blue);
+    z-index: -10;
+}
+.instagram {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    .nav-logo-container {
+        width: 8em;
+    }
+    .nav-button {
+        font-size: .6em;
+    }
+    .main-container {
+        gap: 50px;
+    }
+    /* MAIN TEXTS */
+    .main-texts {
+        gap: 10px;
+    }
+    .main-paragraph {
+        font-size: .7em;
+        width: 60%;
+    }
+    .main-image-container {
+        max-width: 580px;
+    }
+    .numbers-container {
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+    }
+    .numbers-logo-container {
+        width: 35px;
+        height: 35px;
+        margin-left: 0px;
+    }
+    .number {
+        font-size: 4em;
+    }
+    .numbers-description {
+        font-size: 1em;
+    }
+    .father-content {
+        text-align: left;
+    }
+    .content {
+        flex-direction: row;
+        gap: 40px;
+    }
+    .grow-together {
+        flex-direction: row-reverse;
+    }
+    .your-users {
+        flex-direction: row-reverse;
+    }
+    .image-content {
+        width: 80%;
+    }
+    .content-title {
+        font-size: 1.5em;
+    }
+    .content-paragraph {
+        font-size: .7em;
+    }
+    /* ======== FOOTER ======= */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: var(--very-dark-cyan);
+        color: var(--very-pale-blue);
+        gap: 70px;
+    }
+    .footer-content {
+        width: 90%;
+        max-width: 720px;
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+        gap: 100px;
+        margin-top: 20px;
+    }
+    .img-footer-container {
+        max-width: 100%;
+        margin-top: 15em;
+
+    }
+    .img-footer {
+        width: 100%;
+        display: block;
+    }
+    .form-description {
+        font-size: .7em;
+        width: 70%;
+    }
+    .inputs {
+        flex-direction: row;
+        gap: 30px;
+    }
+    .subscribe {
+        width: 50%;
+    }
+    .logo-white {
+        width: 10em;
+    }
+    .contact-container {
+        gap: 20px;
+    }
+    .contact-description {
+        font-size: .7em;
+        width: 80%;
+    }
+    .contacts-container {
+        gap: 20px;
+    }
+    .phone {
+        font-size: .7em;
+    }
+    .rrss-container {
+        gap: 10px;
+        margin-bottom: 100px;
+        margin-top: 20px;
+    }
+    .rrss {
+        width: 2em;
+    }
+    .phone-image, .email-image {
+        width: 1em;
+        height: 1em;;
+    }
+
 }
